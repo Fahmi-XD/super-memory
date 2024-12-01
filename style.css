@@ -1,0 +1,168 @@
+:root {
+  --c-bg: #DEFFF2;
+  --c-cyan: #4CB5EA;
+  --c-blue: #47DDFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  font-size: 18px;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  background-color: var(--c-bg);
+  position: relative;
+}
+
+.bg {
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  left: 60px;
+  z-index: -3;
+}
+
+.bg2 {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+.bg-1 {
+  right: 240px;
+}
+
+.bg-2 {
+  left: 190px;
+  z-index: 2;
+}
+
+.title {
+  display: flex;
+  height: auto;
+  padding: 7px 23px;
+  background-color: var(--c-blue);
+  position: absolute;
+  top: 30px;
+  z-index: 3;
+  left: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.title svg {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar {
+  display: flex;
+  width: calc(100% - 60px - 0px);
+  height: 50px;
+  position: fixed;
+  align-items: center;
+  top: 22px;
+  z-index: 99;
+  left: 130px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  list-style: none;
+  width: 90%;
+  height: auto;
+}
+
+.navbar ul li:nth-child(2) {
+  margin-left: auto;
+}
+
+.navbar ul li:nth-child(3) a,
+.navbar ul li:nth-child(4) a,
+.navbar ul li:nth-child(5) a {
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  gap: 5px;
+  top: 0;
+  left: 140px;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.right {
+  position: absolute;
+  right: 50px;
+  z-index: 4;
+}
+
+.right svg {
+  width: 550px;
+}
+
+.judul {
+  font-size: 70px;
+  color: var(--c-cyan);
+  letter-spacing: 3px;
+}
+
+.desc {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  border-radius: 20px;
+  text-align: center;
+  height: auto;
+  padding: 7px;
+  background-color: var(--c-blue);
+}
+
+.button:nth-child(2) {
+  background-color: transparent;
+  border: solid 1px black;
+}
+
+.sec {
+  display: flex;
+  width: auto;
+  height: auto;
+  gap: 35px;
+}
