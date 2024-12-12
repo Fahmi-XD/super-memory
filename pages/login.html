@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BukuKita | Login</title>
+  <title>Akaneko | Login</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body class="body-loginas">
-  <div class="back">
+  <a href="../index.html" class="back">
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M36 12L12 36M12 12L36 36" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-  </div>
+  </a>
 
   <main class="main-loginas main-login">
     <div class="main-left">
       <h1>LOGIN</h1>
-      <form class="login-form" action="#">
+      <form class="login-form" id="login-form">
         <div class="sect">
           <input type="text" placeholder="Email Address" value="">
         </div>
@@ -27,7 +27,7 @@
           <a class="khus" href="#">Lupa kata sandi?</a>
         </div>
         <div class="sect m-2">
-          <a class="button btn-long" href="#">MASUK</a>
+          <button id="btn-login" type="submit" class="button btn-long">MASUK</button>
         </div>
         <div class="sect">
           <p>Don't have an account? </p>
@@ -37,7 +37,7 @@
           <p>or register with</p>
         </div>
         <div class="sect m-2">        
-          <a class="button btn-google" href="#">
+          <a class="button btn-google" href="./google.html">
             <svg class="google" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="20" height="20" fill="url(#pattern0_50_116)"/>
               <defs>
@@ -70,5 +70,7 @@
       </div>
     </div>
   </main>
+
+  <script src="../login.js"></script>
 </body>
 </html>
